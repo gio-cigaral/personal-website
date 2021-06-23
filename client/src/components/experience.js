@@ -1,17 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 
-function App() {
+function Experience() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="Experience">
+      <header className="Experience-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
+          className="Experience-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -23,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Experience;
