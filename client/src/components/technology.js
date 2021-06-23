@@ -5,7 +5,7 @@ function Technology() {
     <div className="Technology">
       <header className="Technology-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/Technology.js</code> and save to reload.
         </p>
         <a
           className="Technology-link"

@@ -5,7 +5,7 @@ function Connect() {
     <div className="Connect">
       <header className="Connect-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/Connect.js</code> and save to reload.
         </p>
         <a
           className="Connect-link"
