@@ -1,20 +1,15 @@
 import React from "react";
 
+import "../styles/home.css";
+
 function Home() {
   return (
     <div className="Home">
-      <header className="Home-header">
-        <p>
-          Edit <code>src/Home.js</code> and save to reload.
-        </p>
-        <a
-          className="Home-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="home-header">
+        <h1>Gianpaolo (Gio) Cigaral</h1>
+        <h2>
+          Software Engineering Student @ Victoria University of Wellington
+        </h2>
       </header>
     </div>
   );
