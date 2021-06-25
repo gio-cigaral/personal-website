@@ -1,6 +1,8 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
+import "./App.css";
+
 import Home from "./components/home";
 import Profile from "./components/profile";
 import Experience from "./components/experience";
@@ -9,30 +11,51 @@ import Education from "./components/education";
 import Connect from "./components/connect";
 
 function App() {
+  function openNav() {
+    document.getElementById("navbar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("navbar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+
   return (
     <div className="App">
-      <nav className="navbar">
-        <li>
+      {/* Side navigation bar */}
+      <nav id="navbar" className="navbar">
+        <li className="navbar-item">
+          <button type="button" className="navbar-closebtn" onClick={closeNav}>
+            x
+          </button>
+        </li>
+        <li className="navbar-item">
           <Link to="/home">Home</Link>
         </li>
-        <li>
+        <li className="navbar-item">
           <Link to="/profile">Profile</Link>
         </li>
-        <li>
+        <li className="navbar-item">
           <Link to="/experience">Experience</Link>
         </li>
-        <li>
+        <li className="navbar-item">
           <Link to="/technology">Technology</Link>
         </li>
-        <li>
+        <li className="navbar-item">
           <Link to="/education">Education</Link>
         </li>
-        <li>
+        <li className="navbar-item">
           <Link to="/connect">Connect</Link>
         </li>
       </nav>
 
-      <div>
+      {/* Main content area */}
+      <main id="main">
+        <button type="button" className="navbar-openbtn" onClick={openNav}>
+          ☰
+        </button>
+
         <Switch>
           <Route exact path={["/", "/home"]} component={Home} />
           <Route exact path="/profile" component={Profile} />
@@ -41,7 +64,7 @@ function App() {
           <Route exact path="/education" component={Education} />
           <Route exact path="/connect" component={Connect} />
         </Switch>
-      </div>
+      </main>
     </div>
   );
 }
