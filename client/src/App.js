@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
-import "./App.css";
+import "./styles/App.css";
 
 import Home from "./components/home";
 import Profile from "./components/profile";
@@ -12,13 +12,13 @@ import Connect from "./components/connect";
 
 function App() {
   function openNav() {
-    document.getElementById("navbar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("navbar").style.width = "250px";
   }
 
   function closeNav() {
-    document.getElementById("navbar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("navbar").style.width = "0";
   }
 
   return (
@@ -26,6 +26,7 @@ function App() {
       {/* Side navigation bar */}
       <nav id="navbar" className="navbar">
         <li className="navbar-item">
+          {/* Change to close side navbar with click on main screen */}
           <button type="button" className="navbar-closebtn" onClick={closeNav}>
             x
           </button>

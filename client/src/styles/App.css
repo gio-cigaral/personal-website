@@ -40,9 +40,10 @@
 */
 
 main {
-  transition: margin-left .5s;
-  padding: 16px;
+  transition: margin-left 0.5s;
   position: relative;
+  /* * solution to not resize content when opening sidebar */
+  width: 100vw;
 }
 
 .navbar {
@@ -70,16 +71,43 @@ main {
 .navbar-openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: rgb(70, 70, 70);
   color: white;
   padding: 10px 15px;
   border: none;
+  width: 100vw;
+  text-align: left;
 }
 
 .navbar-closebtn {
-  position: absolute;
+position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.content {
+  padding: 16px;
+  border: 1px solid black;
+}
+
+/* Desktop view */
+/* ! View not refreshing immediately when mobile device is rotated */
+@media only screen and (min-width: 700px) {
+  main {
+    margin-left: 250px;
+  }
+
+  .navbar {
+    width: 250px;
+  }
+
+  .navbar-openbtn {
+    visibility: hidden;
+  }
+
+  .navbar-closebtn {
+    visibility: hidden;
+  }
 }
