@@ -5,7 +5,7 @@ function Home() {
     <div className="Home">
       <header className="Home-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/Home.js</code> and save to reload.
         </p>
         <a
           className="Home-link"

@@ -5,7 +5,7 @@ function Profile() {
     <div className="Profile">
       <header className="Profile-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/Profile.js</code> and save to reload.
         </p>
         <a
           className="Profile-link"

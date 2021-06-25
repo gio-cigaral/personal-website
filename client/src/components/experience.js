@@ -5,7 +5,7 @@ function Experience() {
     <div className="Experience">
       <header className="Experience-header">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/Experience.js</code> and save to reload.
         </p>
         <a
           className="Experience-link"
