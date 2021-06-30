@@ -1,21 +1,18 @@
 import React from "react";
 
+import "../styles/page-layout.css";
+import "../styles/technology.css";
+
 function Technology() {
   return (
-    <div className="Technology">
-      <header className="Technology-header">
-        <p>
-          Edit <code>src/Technology.js</code> and save to reload.
-        </p>
-        <a
-          className="Technology-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="Technology page-div">
+      <header className="technology-header">
+        <h1>Technology</h1>
       </header>
+
+      <main className="technology-main page-main">
+        <h2>Hello World</h2>
+      </main>
     </div>
   );
 }

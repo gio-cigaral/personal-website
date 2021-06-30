@@ -12,12 +12,13 @@ import Connect from "./components/connect";
 
 function App() {
   function openNav() {
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("main-content").style.marginLeft = "250px";
     document.getElementById("navbar").style.width = "250px";
   }
 
   function closeNav() {
-    document.getElementById("main").style.marginLeft = "0";
+    // TODO: Change to close side navbar with click on main screen
+    document.getElementById("main-content").style.marginLeft = "0";
     document.getElementById("navbar").style.width = "0";
   }
 
@@ -26,7 +27,6 @@ function App() {
       {/* Side navigation bar */}
       <nav id="navbar" className="navbar">
         <li className="navbar-item">
-          {/* Change to close side navbar with click on main screen */}
           <button type="button" className="navbar-closebtn" onClick={closeNav}>
             x
           </button>
@@ -52,7 +52,7 @@ function App() {
       </nav>
 
       {/* Main content area */}
-      <main id="main">
+      <main id="main-content">
         <button type="button" className="navbar-openbtn" onClick={openNav}>
           ☰
         </button>

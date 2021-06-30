@@ -1,8 +1,7 @@
-main {
+#main-content {
   transition: margin-left 0.5s;
   position: relative;
-  /* * solution to not resize content when opening sidebar */
-  width: 100vw;
+  width: 100%; /* * solution to not resize content when opening sidebar */
 }
 
 .navbar {
@@ -52,10 +51,11 @@ position: absolute;
 }
 
 /* Desktop view */
-/* ! View not refreshing immediately when mobile device is rotated */
+/* ? View not refreshing immediately when mobile device is rotated */
 @media only screen and (min-width: 700px) {
-  main {
+  #main-content {
     margin-left: 250px;
+    width: calc(100% - 250px);
   }
 
   .navbar {
@@ -64,6 +64,7 @@ position: absolute;
 
   .navbar-openbtn {
     visibility: hidden;
+    width: calc(100% - 250px);
   }
 
   .navbar-closebtn {

@@ -1,21 +1,18 @@
 import React from "react";
 
+import "../styles/page-layout.css";
+import "../styles/experience.css";
+
 function Experience() {
   return (
-    <div className="Experience">
-      <header className="Experience-header">
-        <p>
-          Edit <code>src/Experience.js</code> and save to reload.
-        </p>
-        <a
-          className="Experience-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="Experience page-div">
+      <header className="experience-header">
+        <h1>Experience</h1>
       </header>
+
+      <main className="experience-main page-main">
+        <h2>Hello World</h2>
+      </main>
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
 
+import "../styles/page-layout.css";
 import "../styles/home.css";
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="Home page-div">
       <header className="home-header">
         <h1>Gianpaolo (Gio) Cigaral</h1>
         <h2>

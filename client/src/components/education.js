@@ -1,21 +1,18 @@
 import React from "react";
 
+import "../styles/page-layout.css";
+import "../styles/education.css";
+
 function Education() {
   return (
-    <div className="Education">
-      <header className="Education-header">
-        <p>
-          Edit <code>src/Education.js</code> and save to reload.
-        </p>
-        <a
-          className="Education-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="Education page-div">
+      <header className="education-header">
+        <h1>Education</h1>
       </header>
+
+      <main className="education-main page-main">
+        <h2>Hello World</h2>
+      </main>
     </div>
   );
 }
