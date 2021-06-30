@@ -15,16 +15,16 @@ function Profile() {
           <ul className="content-details">
             <li>
               <p className="content-label">Name</p>
-              <p>Gianpaolo (Gio) Cigaral</p>
+              <p className="content-value">Gianpaolo (Gio) Cigaral</p>
             </li>
             <li>
               <p className="content-label">Birthday</p>
-              <p>05 November 2000</p>
+              <p className="content-value">05 November 2000</p>
             </li>
             <li>
               <p className="content-label">Locations</p>
-              <p>Wellington, New Zealand</p>
-              <p>Auckland, New Zealand</p>
+              <p className="content-value">Wellington, New Zealand</p>
+              <p className="content-value">Auckland, New Zealand</p>
             </li>
           </ul>
         </div>
