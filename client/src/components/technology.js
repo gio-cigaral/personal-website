@@ -22,12 +22,14 @@ function Technology() {
             <li>Javascript</li>
           </ul>
         </article>
+
         <article>
           <header>Frameworks</header>
           <ul>
             <li>React</li>
           </ul>
         </article>
+
         <article>
           <header>Tools</header>
           <ul>
