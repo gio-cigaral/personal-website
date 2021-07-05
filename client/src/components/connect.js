@@ -11,7 +11,21 @@ function Connect() {
       </header>
 
       <main className="connect-main page-main">
-        <h2>Hello World</h2>
+        <div>
+          <ul>
+            <li>
+              <a href="mailto:gio.cigaral@gmail.com">email</a>
+            </li>
+            <li>
+              <a href="https://github.com/gio-cigaral">github</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/gianpaolo-cigaral-7a31ab216/">
+                linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
       </main>
     </div>
   );
