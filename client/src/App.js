@@ -6,6 +6,7 @@ import "./styles/App.css";
 import Home from "./components/home";
 import Profile from "./components/profile";
 import Experience from "./components/experience";
+import Projects from "./components/projects";
 import Technology from "./components/technology";
 import Education from "./components/education";
 import Connect from "./components/connect";
@@ -41,6 +42,9 @@ function App() {
           <Link to="/experience">Experience</Link>
         </li>
         <li className="navbar-item">
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li className="navbar-item">
           <Link to="/technology">Technology</Link>
         </li>
         <li className="navbar-item">
@@ -61,6 +65,7 @@ function App() {
           <Route exact path={["/", "/home"]} component={Home} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/experience" component={Experience} />
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/technology" component={Technology} />
           <Route exact path="/education" component={Education} />
           <Route exact path="/connect" component={Connect} />

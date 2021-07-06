@@ -6,7 +6,7 @@ import "../styles/experience.css";
 function Experience() {
   return (
     <div className="Experience page-div">
-      <header className="experience-header">
+      <header className="experience-header page-header">
         <h1>Experience</h1>
       </header>
 

@@ -6,7 +6,7 @@ import "../styles/connect.css";
 function Connect() {
   return (
     <div className="Connect page-div">
-      <header className="connect-header">
+      <header className="connect-header page-header">
         <h1>Connect</h1>
       </header>
 

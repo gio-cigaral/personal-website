@@ -6,7 +6,7 @@ import "../styles/profile.css";
 function Profile() {
   return (
     <div className="Profile page-div">
-      <header className="profile-header">
+      <header className="profile-header page-header">
         <h1>Profile</h1>
       </header>
 

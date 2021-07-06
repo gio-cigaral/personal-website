@@ -6,7 +6,7 @@ import "../styles/technology.css";
 function Technology() {
   return (
     <div className="Technology page-div">
-      <header className="technology-header">
+      <header className="technology-header page-header">
         <h1>Technology</h1>
       </header>
 

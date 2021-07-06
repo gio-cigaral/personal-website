@@ -6,7 +6,7 @@ import "../styles/education.css";
 function Education() {
   return (
     <div className="Education page-div">
-      <header className="education-header">
+      <header className="education-header page-header">
         <h1>Education</h1>
       </header>
 
