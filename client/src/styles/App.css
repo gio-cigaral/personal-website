@@ -1,7 +1,7 @@
 #main-content {
   transition: margin-left 0.5s;
   position: relative;
-  width: 100%; /* * solution to not resize content when opening sidebar */
+  width: 100%; /* solution to not resize content when opening sidebar */
 }
 
 .navbar {
@@ -38,16 +38,11 @@
 }
 
 .navbar-closebtn {
-position: absolute;
+  position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
-
-.content {
-  padding: 16px;
-  border: 1px solid black;
 }
 
 /* Desktop view */
