@@ -1,21 +1,32 @@
 import React from "react";
 
+import "../styles/page-layout.css";
+import "../styles/connect.css";
+
 function Connect() {
   return (
-    <div className="Connect">
-      <header className="Connect-header">
-        <p>
-          Edit <code>src/Connect.js</code> and save to reload.
-        </p>
-        <a
-          className="Connect-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="Connect page-div">
+      <header className="connect-header page-header">
+        <h1>Connect</h1>
       </header>
+
+      <main className="connect-main page-main">
+        <div>
+          <ul>
+            <li>
+              <a href="mailto:gio.cigaral@gmail.com">email</a>
+            </li>
+            <li>
+              <a href="https://github.com/gio-cigaral">github</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/gianpaolo-cigaral-7a31ab216/">
+                linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
     </div>
   );
 }

@@ -6,18 +6,20 @@ import "./styles/App.css";
 import Home from "./components/home";
 import Profile from "./components/profile";
 import Experience from "./components/experience";
+import Projects from "./components/projects";
 import Technology from "./components/technology";
 import Education from "./components/education";
 import Connect from "./components/connect";
 
 function App() {
   function openNav() {
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("main-content").style.marginLeft = "250px";
     document.getElementById("navbar").style.width = "250px";
   }
 
   function closeNav() {
-    document.getElementById("main").style.marginLeft = "0";
+    // TODO: Change to close side navbar with click on main screen
+    document.getElementById("main-content").style.marginLeft = "0";
     document.getElementById("navbar").style.width = "0";
   }
 
@@ -26,7 +28,6 @@ function App() {
       {/* Side navigation bar */}
       <nav id="navbar" className="navbar">
         <li className="navbar-item">
-          {/* Change to close side navbar with click on main screen */}
           <button type="button" className="navbar-closebtn" onClick={closeNav}>
             x
           </button>
@@ -41,6 +42,9 @@ function App() {
           <Link to="/experience">Experience</Link>
         </li>
         <li className="navbar-item">
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li className="navbar-item">
           <Link to="/technology">Technology</Link>
         </li>
         <li className="navbar-item">
@@ -52,7 +56,7 @@ function App() {
       </nav>
 
       {/* Main content area */}
-      <main id="main">
+      <main id="main-content">
         <button type="button" className="navbar-openbtn" onClick={openNav}>
           ☰
         </button>
@@ -61,6 +65,7 @@ function App() {
           <Route exact path={["/", "/home"]} component={Home} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/experience" component={Experience} />
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/technology" component={Technology} />
           <Route exact path="/education" component={Education} />
           <Route exact path="/connect" component={Connect} />

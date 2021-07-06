@@ -1,49 +1,7 @@
-/* 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} 
-*/
-
-main {
+#main-content {
   transition: margin-left 0.5s;
   position: relative;
-  /* * solution to not resize content when opening sidebar */
-  width: 100vw;
+  width: 100%; /* solution to not resize content when opening sidebar */
 }
 
 .navbar {
@@ -80,23 +38,19 @@ main {
 }
 
 .navbar-closebtn {
-position: absolute;
+  position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
 
-.content {
-  padding: 16px;
-  border: 1px solid black;
-}
-
 /* Desktop view */
-/* ! View not refreshing immediately when mobile device is rotated */
+/* ? View not refreshing immediately when mobile device is rotated */
 @media only screen and (min-width: 700px) {
-  main {
+  #main-content {
     margin-left: 250px;
+    width: calc(100% - 250px);
   }
 
   .navbar {
@@ -105,6 +59,7 @@ position: absolute;
 
   .navbar-openbtn {
     visibility: hidden;
+    width: calc(100% - 250px);
   }
 
   .navbar-closebtn {
