@@ -1,2 +1,2 @@
 # personal_website
-My personal website about myself and my portfolio
+My personal website about myself and my projects.
