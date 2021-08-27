@@ -28,7 +28,9 @@ function Experience() {
               <li>
                 Answered customer queries and complaints in a courteous manner
               </li>
-              <li>Worked cooperatively in a team environment</li>
+              <li>
+                Worked cooperatively in a team environment
+              </li>
               <li>
                 Ensured the health and safety of all store associates and
                 customers

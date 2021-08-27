@@ -3,7 +3,8 @@
 }
 
 .page-header {
-    
+    display: block;
+    border: 1px solid red;
 }
 
 .page-main {

@@ -3,6 +3,8 @@ import { Switch, Route, Link } from "react-router-dom";
 
 import "./styles/App.css";
 
+import useWindowDimensions from "./utility/dimensions_utility";
+
 import Home from "./components/home";
 import Profile from "./components/profile";
 import Experience from "./components/experience";
@@ -12,15 +14,23 @@ import Education from "./components/education";
 import Connect from "./components/connect";
 
 function App() {
+  const {height, width} = useWindowDimensions(); 
+  const [navOpen, setNavOpen] = React.useState(false);
+
   function openNav() {
     document.getElementById("main-content").style.marginLeft = "250px";
     document.getElementById("navbar").style.width = "250px";
+
+    setNavOpen(true);
   }
 
   function closeNav() {
-    // TODO: Change to close side navbar with click on main screen
-    document.getElementById("main-content").style.marginLeft = "0";
-    document.getElementById("navbar").style.width = "0";
+    if (width < 700) {
+      document.getElementById("main-content").style.marginLeft = "0";
+      document.getElementById("navbar").style.width = "0";
+
+      setNavOpen(false);
+    }
   }
 
   return (
@@ -28,48 +38,59 @@ function App() {
       {/* Side navigation bar */}
       <nav id="navbar" className="navbar">
         <li className="navbar-item">
-          <button type="button" className="navbar-closebtn" onClick={closeNav}>
-            x
-          </button>
+          <Link to="/home" className="link-style">
+            Home
+          </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/home">Home</Link>
+          <Link to="/profile" className="link-style">
+            Profile
+          </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/profile">Profile</Link>
+          <Link to="/experience" className="link-style">
+            Experience
+          </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/experience">Experience</Link>
+          <Link to="/projects" className="link-style">
+            Projects
+          </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/projects">Projects</Link>
+          <Link to="/technology" className="link-style">
+            Technology
+          </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/technology">Technology</Link>
+          <Link to="/education" className="link-style">
+            Education
+          </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/education">Education</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/connect">Connect</Link>
+          <Link to="/connect" className="link-style">
+            Connect
+          </Link>
         </li>
       </nav>
 
       {/* Main content area */}
       <main id="main-content">
-        <button type="button" className="navbar-openbtn" onClick={openNav}>
+        <button type="button" className="navbar-openbtn" onClick={navOpen ? closeNav : openNav}>
           ☰
         </button>
 
-        <Switch>
-          <Route exact path={["/", "/home"]} component={Home} />
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/experience" component={Experience} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/technology" component={Technology} />
-          <Route exact path="/education" component={Education} />
-          <Route exact path="/connect" component={Connect} />
-        </Switch>
+        <div className="test" onClick={closeNav}>
+          <Switch>
+            <Route exact path={["/", "/home"]} component={Home} />
+            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/experience" component={Experience} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/technology" component={Technology} />
+            <Route exact path="/education" component={Education} />
+            <Route exact path="/connect" component={Connect} />
+          </Switch>
+        </div>
       </main>
     </div>
   );

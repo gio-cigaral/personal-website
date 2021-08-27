@@ -21,9 +21,7 @@ function Education() {
           <div>
             <ul>
               <li>Awarded Dean&apos;s List for Academic Excellence - 2019</li>
-              <li>
-                Awarded Victoria Tangiwai School Leaver Scholarship - 2018
-              </li>
+              <li>Awarded Victoria Tangiwai School Leaver Scholarship - 2018</li>
             </ul>
           </div>
         </article>

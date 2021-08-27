@@ -20,9 +20,7 @@ function Connect() {
               <a href="https://github.com/gio-cigaral">github</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/gianpaolo-cigaral-7a31ab216/">
-                linkedin
-              </a>
+              <a href="https://www.linkedin.com/in/gianpaolo-cigaral-7a31ab216/">linkedin</a>
             </li>
           </ul>
         </div>
