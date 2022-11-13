@@ -1,4 +1,27 @@
 .Home {
-    background-color: lightgrey;
-    height: 100vh;
+  /* background-color: lightgrey; */
+  /* height: 100vh; */
+}
+
+.home-header {
+  text-align: center;
+}
+
+.home-header > h1 {
+  font-size: 32px;
+}
+
+.home-header > h2 {
+  font-size: 24px;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 700px) {
+  .home-header > h1 {
+    font-size: 56px;
+  }
+
+  .home-header > h2 {
+    font-size: 38px;
+  }
 }

@@ -1,3 +1,7 @@
+.App {
+  overflow: hidden;
+}
+
 #main-content {
   transition: margin-left 0.5s;
   position: relative;
@@ -10,7 +14,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #52B788;
+  background-color: #1B242F;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 47px;
@@ -20,7 +24,6 @@
   padding: 8px 8px 8px 8px;
   display: block;
   transition: 0.3s;
-  /* border: 1px solid red; */
 }
 
 .navbar-openbtn {
@@ -38,13 +41,16 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  /* color: #818181; */
-  color: #081C15;
+  color: white;
   display: block;
 }
 
+.current-link {
+  color: #D71E63;
+}
+
 /* Desktop view */
-/* ? View not refreshing immediately when mobile device is rotated */
+/* ? View not refreshing immediately when mobile device is rotated -> have to set a screen listener to detect size change */
 @media only screen and (min-width: 700px) {
   #main-content {
     margin-left: 250px;
@@ -55,12 +61,13 @@
     width: 250px;
   }
 
+  .navbar-item:hover {
+    color: #D71E63;
+    padding-left: 24px;
+  }
+
   .navbar-openbtn {
     visibility: hidden;
     width: calc(100% - 250px);
-  }
-
-  .navbar-closebtn {
-    visibility: hidden;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, NavLink as Link } from "react-router-dom";
 
 import "./styles/App.css";
 
@@ -13,6 +13,7 @@ import Technology from "./components/technology";
 import Education from "./components/education";
 import Connect from "./components/connect";
 
+// TODO: refactor functional component into class component
 function App() {
   const {height, width} = useWindowDimensions(); 
   const [navOpen, setNavOpen] = React.useState(false);
@@ -38,37 +39,37 @@ function App() {
       {/* Side navigation bar */}
       <nav id="navbar" className="navbar">
         <li className="navbar-item">
-          <Link to="/home" className="link-style">
+          <Link to="/home" className="link-style" activeClassName="current-link">
             Home
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/profile" className="link-style">
+          <Link to="/profile" className="link-style" activeClassName="current-link">
             Profile
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/experience" className="link-style">
+          <Link to="/experience" className="link-style" activeClassName="current-link">
             Experience
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/projects" className="link-style">
+          <Link to="/projects" className="link-style" activeClassName="current-link">
             Projects
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/technology" className="link-style">
+          <Link to="/technology" className="link-style" activeClassName="current-link">
             Technology
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/education" className="link-style">
+          <Link to="/education" className="link-style" activeClassName="current-link">
             Education
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/connect" className="link-style">
+          <Link to="/connect" className="link-style" activeClassName="current-link">
             Connect
           </Link>
         </li>
@@ -80,6 +81,9 @@ function App() {
           ☰
         </button>
 
+        {
+          // TODO: fix 'touchable' area of div by setting flex-grow to take up rest of empty space
+        }
         <div className="test" onClick={closeNav}>
           <Switch>
             <Route exact path={["/", "/home"]} component={Home} />

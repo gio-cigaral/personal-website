@@ -1,12 +1,24 @@
 .page-div {
-    padding: 16px;
+  /* padding: 16px; */
 }
 
 .page-header {
-    display: block;
-    border: 1px solid red;
+  border: 1px solid red;
+  display: block;
+  text-align: center;
+}
+
+.page-header > h1 {
+  font-size: 32px;
 }
 
 .page-main {
-    
+  padding: 16px;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 700px) {
+  .page-header > h1 {
+    font-size: 56px;
+  }
 }
